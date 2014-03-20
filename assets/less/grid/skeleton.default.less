@@ -1,0 +1,56 @@
+// Default screen size 960px 
+// Note: Design for a width of 960px with 16 columns
+
+@Resolution: 960px; // Grid resolution
+@Gutter: 20px; // Space between the columns
+@NumberOfColumns: 16; //Number of Columns
+
+//CSS start rendering default container for 16 columns
+.container                                  { position: relative; width: @Resolution ; margin: 0 auto; padding: 0; }
+.container .column,
+.container .columns                         { float: left; display: inline; margin-left: (@Gutter / 2); margin-right: (@Gutter / 2); }
+.row                                        { margin-bottom: 20px; }
+
+/* Nested Column Classes */
+.column.alpha, .columns.alpha               { margin-left: 0;  }
+.column.omega, .columns.omega               { margin-right: 0; }
+
+/* Base Grid */
+.container .one.column,
+.container .one.columns                     { .FinalWidth(0)  }
+.container .two.columns                     { .FinalWidth(1)  }
+.container .three.columns                   { .FinalWidth(2)  }
+.container .four.columns                    { .FinalWidth(3)  }
+.container .five.columns                    { .FinalWidth(4)  } 
+.container .six.columns                     { .FinalWidth(5)  }
+.container .seven.columns                   { .FinalWidth(6)  }
+.container .eight.columns                   { .FinalWidth(7)  }
+.container .nine.columns                    { .FinalWidth(8)  }
+.container .ten.columns                     { .FinalWidth(9)  }
+.container .eleven.columns                  { .FinalWidth(10) }
+.container .twelve.columns                  { .FinalWidth(11) }
+.container .thirteen.columns                { .FinalWidth(12) }
+.container .fourteen.columns                { .FinalWidth(13) }
+.container .fifteen.columns                 { .FinalWidth(14) }
+.container .sixteen.columns                 { .FinalWidth(15) }
+
+.container .one-third.column                { .OneThird(1) }
+.container .two-thirds.column               { .OneThird(2) }
+
+/* Offsets */
+.container .offset-by-one                   { .Offset(1)  }
+.container .offset-by-two                   { .Offset(2)  }
+.container .offset-by-three                 { .Offset(3)  }
+.container .offset-by-four                  { .Offset(4)  }
+.container .offset-by-five                  { .Offset(5)  }
+.container .offset-by-six                   { .Offset(6)  }
+.container .offset-by-seven                 { .Offset(7)  }
+.container .offset-by-eight                 { .Offset(8)  }
+.container .offset-by-nine                  { .Offset(9)  }
+.container .offset-by-ten                   { .Offset(10) }
+.container .offset-by-eleven                { .Offset(11) }  
+.container .offset-by-twelve                { .Offset(12) }  
+.container .offset-by-thirteen              { .Offset(13) }  
+.container .offset-by-fourteen              { .Offset(14) }  
+.container .offset-by-fifteen               { .Offset(15) }  
+

@@ -1,0 +1,204 @@
+// Table of Content
+// ==================================================
+// #Basic Styles
+// #Site Styles
+// #Typography
+// #Links
+// #Lists
+// #Images
+// #Misc
+// #Clearing
+
+// #Basic Styles
+// ==================================================
+body {
+  background: @bodyBackground;
+  font-family: @bodyFontFamily;
+  font-size: @bodyFontSize;
+  font-weight: @bodyFontWeight;
+  color: @bodyColor;
+  .font-smoothing();
+}
+
+// #Typography
+// ==================================================
+h1, h2, h3, h4, h5, h6 {
+  color: @headerColor;
+  font-family: @headerFontFamily;
+  font-weight: @headerFontWeight; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+h1 { font-size: @h1FontSize; line-height: @h1LineHeight; margin-bottom: @h1MarginBottom; }
+h2 { font-size: @h2FontSize; line-height: @h2LineHeight; margin-bottom: @h2MarginBottom; }
+h3 { font-size: @h3FontSize; line-height: @h3LineHeight; margin-bottom: @h3MarginBottom; }
+h4 { font-size: @h4FontSize; line-height: @h4LineHeight; margin-bottom: @h4MarginBottom; }
+h5 { font-size: @h5FontSize; line-height: @h5LineHeight; }
+h6 { font-size: @h6FontSize; line-height: @h6LineHeight; }
+.subheader { color: #777; }
+
+p { margin: 0 0 20px 0; line-height: 1.2;}
+p img { margin: 0; }
+p.lead { font-size: 21px; line-height: 27px; color: #777;  }
+
+em { font-style: italic; }
+strong { font-weight: bold; color: #333; }
+small { font-size: 80%; }
+
+/*  Blockquotes  */
+blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 3px solid #ddd; }
+blockquote cite {
+  display: block; font-size: 12px; color: #555;
+  &:before { content: "\2014 \0020"; }
+}
+blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+// #Links
+// ==================================================
+a, a:visited { color: @linkColor; text-decoration: none; outline: 0; }
+a:hover, a:focus { color: @linkHoverColor; }
+p a, p a:visited { line-height: inherit; }
+
+/* #Lists
+================================================== */
+
+ul,ol{
+  padding:0;
+  margin:0 0 10px 25px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul{
+  margin-bottom:0;
+}
+li{
+  line-height:20px;
+}
+ul.unstyled,
+ol.unstyled{
+  margin-left:0;
+  list-style:none;
+}
+ul.inline,
+ol.inline{
+  margin-left:0;
+  list-style:none;
+}
+ul.inline>li,
+ol.inline>li{
+  display:inline-block;
+  *display:inline;
+  *zoom:1;
+  padding-left:5px;
+  padding-right:5px;
+}
+dl{ margin-bottom:20px; }
+dt,dd{ line-height:20px; }
+dt{ font-weight:bold; }
+dd{ margin-left:10px; }
+
+// #Images
+// ==================================================
+
+img.scale-with-grid {
+  max-width: 100%;
+  height: auto;
+}
+
+// Fix for odd Mozilla border & padding issues
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+//Header
+header{
+  width:100%;
+  background:@headerBackground;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-bottom:1px solid #ddd;
+  clear:both;  
+}
+
+// #Misc
+// ==================================================
+.remove-bottom { margin-bottom: 0 !important; }
+.half-bottom { margin-bottom: 10px !important; }
+.add-bottom { margin-bottom: 20px !important; }
+
+.pull-center{ text-align:center !important; }
+.pull-left{ float:left !important; }
+.pull-right{ float:right !important; }
+
+.muted h1,
+.muted h2,
+.muted h3,
+.muted h4,
+.muted h5,
+.muted h6,
+.muted { color: #aaa !important;}
+
+.well{  
+  display:block;
+  background-color: rgb(49,60,78) !important;
+  padding: 10px !important;
+  .box-sizing();
+}
+
+.header-color{
+  color: @alternativeColor;
+}
+
+.sidebar{
+  position:fixed;
+  top:0;
+  left:0; 
+  width: 300px; 
+  min-height: 100%;
+}
+
+.main{
+  margin-left: 300px;
+}
+
+// #Clearing
+// ==================================================
+
+// Self Clearing Goodness
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+.row,
+.clearfix {
+  zoom: 1;
+}
+
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}

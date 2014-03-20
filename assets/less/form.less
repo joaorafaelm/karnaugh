@@ -1,0 +1,83 @@
+// #Forms
+// ==================================================
+form {
+  margin-bottom: 20px;
+}
+fieldset {
+  margin-bottom: 20px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+  border: 2px solid @alternativeColor;
+  padding: 6px 4px;
+  outline: none;
+  .rounded();
+  font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  margin: 0 ;
+  width: 210px;
+  max-width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  background: none;
+  outline: none;
+  .box-sizing();
+  &.full-width {
+  width:100%;
+  }
+}
+textarea.full-width {
+  resize:vertical;
+}
+select {
+  padding: 4px 2px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border: 2px solid @alternativeColor;
+  color: white;
+  .box-shadow(0 0 3px rgba(0,0,0,.2));
+}
+textarea {
+  min-height: 60px;
+}
+label,
+legend {
+  display: block;
+  font-weight: bold;
+  font-size: 13px;
+}
+select {
+  width: 220px;
+}
+input[type="checkbox"] {
+  display: inline;
+  outline: none;
+}
+
+input[type="radio"] {
+  outline: none;
+  -webkit-appearance: none;
+  width:10px;
+  height:10px;
+  background: rgb(200,90,60);
+  .border-radius(5px, 5px, 5px, 5px);
+  margin: 5px 5px 5px 10px;
+}
+
+input[type="radio"]:checked {
+  background: rgb(40,200,150);
+}
+
+
+label span,
+legend span {
+  font-weight: normal;
+  font-size: 13px;
+  color: #444;
+}

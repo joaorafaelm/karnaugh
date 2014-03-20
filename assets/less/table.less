@@ -1,0 +1,86 @@
+// #Table
+// Addapted from Pure
+// ==================================================
+// 
+
+table {  
+  width:100%;
+  empty-cells: show;    
+  border-collapse: separate;
+
+}
+
+table caption {
+  color: #000;
+  font: italic 85%/1 arial, sans-serif;
+  padding: 1em 0;
+  text-align: center;
+}
+table td,
+table th {
+  border-left: 1px solid @bodyBackground; // inner column border 
+  border-width: 0 0 0 3px;
+  font-size: inherit;
+  margin: 0;
+  overflow: visible; //to make ths where the title is really long work
+  padding: 10px 12px; // cell padding
+}
+table td:first-child,
+table th:first-child {
+  border-left-width: 0;
+}
+
+table thead {
+  // background: #eee;
+  color: @alternativeColor;    
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+  border-collapse: separate;   
+  text-align:left;
+  font-weight:bold; 
+}
+
+table td {
+  background-color: transparent;
+}
+table.odd td {
+  background-color: #f2f2f2;
+}
+
+//striped
+table.striped tr:nth-child(even) td {
+  background-color: #f2f2f2;//striped for modern browsers
+}
+
+//Bordered tables
+table.bordered{
+  border:1px solid #ddd;
+  border-collapse: separate;
+}
+
+table.bordered td {
+  border-bottom:1px solid #ccc;    
+}
+
+table.bordered tbody > tr:first-child td {
+  border-top:1px solid #ccc;  
+}
+
+table.bordered tbody > tr:last-child td,
+table.horizontal tbody > tr:last-child td {
+  border-bottom-width: 0;
+}
+
+
+//Horizontal bordered tables
+table.horizontal td,
+table.horizontal th {
+    border-width: 0 0 1px 0;
+    border-bottom:1px solid #cbcbcb;
+}
+table.horizontal tbody > tr:last-child td {
+    border-bottom-width: 0;
+}
+
+table tr:hover{opacity:1 !important;}

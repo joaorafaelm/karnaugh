@@ -1,0 +1,49 @@
+// Additional - Flexible Column Widths
+
+.fluid.container                             { position: relative; width: 90%; margin: 0 auto; padding: 0; } /*whatever you want - can even be fixed if you prefer*/
+.fluid.container .column,
+.fluid.container .columns                    { float: left; display: inline; margin-left: 0.78125%; margin-right: 0.78125%; }
+.row                                         { margin-bottom: 20px; }
+
+/* Nested Column Classes, you probably won't need them in fluid system*/
+.column.alpha, .columns.alpha               { margin-left: 0; }
+.column.omega, .columns.omega               { margin-right: 0; }
+
+/* Base Grid */
+.fluid.container .one.column,
+.fluid.container .one.columns                     { width: 4.6875%;  }
+.fluid.container .two.columns                     { width: 10.9375%; }
+.fluid.container .three.columns                   { width: 17.1875%; }
+.fluid.container .four.columns                    { width: 23.4375%; }
+.fluid.container .five.columns                    { width: 29.6875%; }
+.fluid.container .six.columns                     { width: 35.9375%; }
+.fluid.container .seven.columns                   { width: 42.1875%; }
+.fluid.container .eight.columns                   { width: 48.4375%; }
+.fluid.container .nine.columns                    { width: 54.6875%; }
+.fluid.container .ten.columns                     { width: 60.9375%; }
+.fluid.container .eleven.columns                  { width: 67.1875%; }
+.fluid.container .twelve.columns                  { width: 73.4375%; }
+.fluid.container .thirteen.columns                { width: 79.6875%; }
+.fluid.container .fourteen.columns                { width: 85.9375%; }
+.fluid.container .fifteen.columns                 { width: 92.1875%; }
+.fluid.container .sixteen.columns                 { width: 98.4375%; }
+
+.fluid.container .one-third.column                { width: 31.7708%; }
+.fluid.container .two-thirds.column               { width: 65.1041%; }
+
+/* Offsets */
+.fluid.container .offset-by-one                   { padding-left: 6.25%; }
+.fluid.container .offset-by-two                   { padding-left: 12.5%; }
+.fluid.container .offset-by-three                 { padding-left: 18.75%; }
+.fluid.container .offset-by-four                  { padding-left: 25%; }
+.fluid.container .offset-by-five                  { padding-left: 31.25%; }
+.fluid.container .offset-by-six                   { padding-left: 37.5%; }
+.fluid.container .offset-by-seven                 { padding-left: 43.75%; }
+.fluid.container .offset-by-eight                 { padding-left: 50%; }
+.fluid.container .offset-by-nine                  { padding-left: 56.25%; }
+.fluid.container .offset-by-ten                   { padding-left: 62.5%; }
+.fluid.container .offset-by-eleven                { padding-left: 68.75%; }
+.fluid.container .offset-by-twelve                { padding-left: 75%; }
+.fluid.container .offset-by-thirteen              { padding-left: 81.25%; }
+.fluid.container .offset-by-fourteen              { padding-left: 87.5%; }
+.fluid.container .offset-by-fifteen               { padding-left: 93.75%; }

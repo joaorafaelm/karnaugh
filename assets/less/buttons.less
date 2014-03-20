@@ -1,0 +1,145 @@
+// #Buttons
+// ==================================================
+// 
+.button,
+a.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {    
+  background: @ButtonDefault;  
+  .border-radius(3px, 3px, 3px, 3px);
+  color: @ButtonDefaultColor;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;  
+  cursor: pointer;
+  margin-bottom: 20px;
+  line-height: normal;
+  padding: 10px 15px;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border:none;  
+  &:hover {
+    color: @ButtonDefaultColor;
+    background: @ButtonDefaultHover;  
+    .box-shadow(inset 0 0 2px rgba(0,0,0,.25));     
+  }
+  &:active {           
+    background: @ButtonDefaultActive;
+    .box-shadow(inset 0 0 5px rgba(0,0,0,.25));
+  }
+  &.full-width {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center;
+  }
+}
+
+//small size
+.button.small,
+a.button.small,
+button.small,
+input[type="submit"].small,
+input[type="reset"].small,
+input[type="button"].small {    
+  font-size: 13px;
+  padding: 7px 10px;
+}
+
+//large size
+.button.large,
+a.button.large,
+button.large,
+input[type="submit"].large,
+input[type="reset"].large,
+input[type="button"].large {    
+  font-size: 15px;
+  padding: 14px 25px;
+}
+
+//dark buttons
+.dark.button,
+a.dark.button,
+button.dark,
+input[type="submit"].dark,
+input[type="reset"].dark,
+input[type="button"].dark {    
+  background: @ButtonDark;    
+  color: @ButtonDarkColor;  
+  &:hover {    
+    background: @ButtonDarkHover;    
+  }
+  &:active {    
+    background: @ButtonDarkActive;    
+  }
+}
+
+//blue button
+.blue.button,
+a.blue.button,
+button.blue,
+input[type="submit"].blue,
+input[type="reset"].blue,
+input[type="button"].blue {    
+  background: @ButtonBlue;    
+  color: @ButtonBlueColor;  
+  &:hover {    
+    background: @ButtonBlueHover;    
+  }
+  &:active {    
+    background: @ButtonBlueActive;    
+  }
+}
+
+//Green button
+.green.button,
+a.green.button,
+button.green,
+input[type="submit"].green,
+input[type="reset"].green,
+input[type="button"].green {    
+  background: @ButtonGreen;    
+  color: @ButtonGreenColor;  
+  &:hover {    
+    background: @ButtonGreenHover;    
+  }
+  &:active {    
+    background: @ButtonGreenActive;    
+  }  
+}
+
+//red button
+.red.button,
+a.red.button,
+button.red,
+input[type="submit"].red,
+input[type="reset"].red,
+input[type="button"].red {    
+  background: @ButtonRed;    
+  color: @ButtonRedColor;  
+  &:hover {    
+    background: @ButtonRedHover;    
+  }
+  &:active {    
+    background: @ButtonRedActive;    
+  }  
+}
+
+//orange button
+.orange.button,
+a.orange.button,
+button.orange,
+input[type="submit"].orange,
+input[type="reset"].orange,
+input[type="button"].orange {    
+  background: @ButtonOrange;    
+  color: @ButtonOrangeColor;  
+  &:hover {    
+    background: @ButtonOrangeHover;    
+  }
+  &:active {    
+    background: @ButtonOrangeActive;    
+  }  
+}

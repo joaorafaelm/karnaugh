@@ -837,10 +837,3 @@ function Init()
 	SetInnerHTML("EquationDiv", GenerateEquationHTML());
 	SetInnerHTML("TruthTablenDiv", GenerateTruthTableHTML());
 }
-
-
-var rows = document.getElementById("TruthTableDiv").getElementsByTagName("tr");
-function getFirstCol(row){
-    alert(row.getElementsByTagName('td')[0].innerHTML);
-}
-

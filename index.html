@@ -42,9 +42,28 @@ GNU General Public License for more details.
 					<input type="radio" onClick="ToggleDontCare()" ID="AllowDontCareCB" name="care" class="dark remove-bottom">
 					Allow Don't Care
 				</label>
+				<p class="header-color">
+					<small><b>TIPS</b></small>
+					<br/>
+					<small>&middot; To solve the expression manually, select the number of variables above, and leave the expression input empty.</small>
+					<br/><br/>
+					<small>&middot; To solve an expression automatically, just fill the input field on the top of the page with your expression, and then press enter. <b>(4 variables only)</b></small>
+					<br/><br/>
+					<small>&middot; You can get more detailed information by hovering the optimized expression, under the input field.</small>
+					<br/><br/>
+					<small>&middot; If <b>allow don't care</b> is enabled, you'll be able to ignore selected combinations, by clicking on the buttons with 1.</small>
+					<br/><br/>
+					<small><b>AND</b> = <b>&</b></small>
+					<br>
+					<small><b>NOT</b> = <b>!</b></small>
+					<br>
+					<small><b>OR</b> = <b>+</b></small>
+					<br/><br/>
 
-				<div style="color: white">
-				</div>
+					<a href="http://github.com/joaorafaelm/karnaugh/" class="dark button full-width" target="_blank"><small>VIEW PROJECT ON <b>GITHUB</b></small></a>
+					
+
+				</p>
 			</div>
 		</div>
 	</div>
@@ -56,15 +75,12 @@ GNU General Public License for more details.
 			
 
 	    	<div class="sixteen columns well add-bottom">    
-				<form action="" method="post">
-					<div class="fifteen columns">
-						<input type="text" class="half-bottom full-width pull-center" name="equation" style="text-transform:uppercase;">
-					</div>
-					<div class="one column">
-						<input type="submit" class="small blue button full-width half-bottom" value="Go" style="margin-top: 1px;">
-					</div>
-				</form>
-
+				<input type="text" class="remove-bottom full-width pull-center" id="equation" style="text-transform:uppercase;">
+				<p class="header-color half-bottom">
+					<small>
+						Use <b>!</b> to represent <b>NOT</b>, <b>+</b> for <b>OR</b> and <b>&</b> for <b>AND</b> (e.g. <b>A&B&C&D + !A&B&!C + A&!D&C</b>)
+					</small>
+				</p>
 				<div id="EquationDiv">
 				</div>        
 			
@@ -87,5 +103,6 @@ GNU General Public License for more details.
 
 
 	<script src="assets/js/app.js"></script> 	    
+	<script src="assets/js/equation.js"></script> 	    
 </body>
 </html>
